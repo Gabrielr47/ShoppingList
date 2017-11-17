@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/theming/
-
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,3 +12,47 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+$SIDEMENU_TOP: #2DA8E3;
+$SIDEMENU_BOTTOM: rgb(33, 165, 226);
+$FONT_COLOR: #FAFAFA;
+.toolbar-background-md,
+.toolbar-background-ios,
+.tabs-md .tabbar,
+.tabs-ios .tabbar {
+  background: -webkit-gradient(left top, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+  background: -o-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+  background: -moz-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+  background: linear-gradient(to bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+  background-repeat: repeat-x;
+}
+
+.toolbar-title,
+.tabs-md .tab-button,
+.tabs-ios .tab-button,
+.tab-button-text {
+  color: $FONT_COLOR;
+}
+
+.bar-button,
+.tabs-md .bar-button:hover {
+  color: $FONT_COLOR;
+}
+
+.tabs-md .tab-button[aria-selected=true] .tab-button-icon,
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon,
+.tabs-md .tab-button-icon,
+.tabs-ios .tab-button-icon {
+  color: $FONT_COLOR;
+}
+
+.bar-button-default-md:hover:not(.disable-hover),
+.bar-button-clear-md-default:hover:not(.disable-hover),
+.bar-button-md-default:hover:not(.disable-hover) {
+  color: $FONT_COLOR;
+}
+
+.bar-button-default-ios:hover:not(.disable-hover),
+.bar-button-default.bar-button-ios-default:hover:not(.disable-hover),
+.bar-button-clear-ios-default:hover:not(.disable-hover) {
+  color: $FONT_COLOR;
+}
